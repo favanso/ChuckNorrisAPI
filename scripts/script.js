@@ -1,13 +1,16 @@
+
 function handleClick() {
+  
+
   let url = "https://api.chucknorris.io/jokes/random?category=dev";
   let output = document.getElementById("output");
   let message = "";
   let img = document.getElementById("img");
 
   img.src = "assets/Img2.jpg";
-  img.setAttribute("width", "254");
-  img.setAttribute("height", "260");
-
+  img.setAttribute("width", "200");
+  img.setAttribute("height", "210");
+  
   fetch(url)
     .then((response) => response.json())
     .then((json) => {
@@ -27,6 +30,6 @@ function reset() {
   let output = document.getElementById("output");
   output.innerText = "";
   img.src = "assets/download.jpg";
-  img.setAttribute("width", "254");
-  img.setAttribute("height", "198");
+  img.setAttribute("width", "200");
+  img.setAttribute("height", "150");
 }
